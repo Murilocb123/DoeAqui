@@ -1,0 +1,555 @@
+[30508] Log opened at 2024-06-15 15:40:54.129259
+[30508] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[30508] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[30508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="30508" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[30508] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[30508] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[30508] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[30508] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="305080001" resolved="unresolved"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 26
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="305080002" resolved="unresolved"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Error"
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="305080003" resolved="resolved"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Fatal error"
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="305080004" resolved="resolved"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Parse error"
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="305080005" resolved="resolved"></response>
+
+[30508] [Step Debug] <- breakpoint_set -i 10 -t exception -x "Unknown error"
+[30508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="10" id="305080006" resolved="resolved"></response>
+
+[30508] [Step Debug] <- run -i 11
+[15464] Log opened at 2024-06-15 15:43:41.831565
+[15464] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[15464] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[16512] Log opened at 2024-06-15 15:44:09.662114
+[16512] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[16512] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[10424] Log opened at 2024-06-15 15:45:57.282939
+[10424] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[10424] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[10424] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="10424" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[10424] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[10424] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[10424] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[10424] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="104240001" resolved="unresolved"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 26
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="104240002" resolved="unresolved"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Error"
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="104240003" resolved="resolved"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Fatal error"
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="104240004" resolved="resolved"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Parse error"
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="104240005" resolved="resolved"></response>
+
+[10424] [Step Debug] <- breakpoint_set -i 10 -t exception -x "Unknown error"
+[10424] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="10" id="104240006" resolved="resolved"></response>
+
+[10424] [Step Debug] <- run -i 11
+[30888] Log opened at 2024-06-15 15:48:11.843076
+[30888] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[30888] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[30888] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="30888" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[30888] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[30888] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[30888] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[30888] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="308880001" resolved="unresolved"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 26
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="308880002" resolved="unresolved"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Error"
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="308880003" resolved="resolved"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Fatal error"
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="308880004" resolved="resolved"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Parse error"
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="308880005" resolved="resolved"></response>
+
+[30888] [Step Debug] <- breakpoint_set -i 10 -t exception -x "Unknown error"
+[30888] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="10" id="308880006" resolved="resolved"></response>
+
+[30888] [Step Debug] <- run -i 11
+[9012] Log opened at 2024-06-15 15:50:09.259849
+[9012] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[9012] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[9012] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="9012" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[9012] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[9012] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[9012] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[9012] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[9012] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="90120001" resolved="unresolved"></response>
+
+[9012] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="90120002" resolved="resolved"></response>
+
+[9012] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="90120003" resolved="resolved"></response>
+
+[9012] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="90120004" resolved="resolved"></response>
+
+[9012] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[9012] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="90120005" resolved="resolved"></response>
+
+[9012] [Step Debug] <- run -i 10
+[6528] Log opened at 2024-06-15 15:52:03.214468
+[6528] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[6528] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[6528] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="6528" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[6528] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[6528] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[6528] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[6528] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[6528] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="65280001" resolved="unresolved"></response>
+
+[6528] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="65280002" resolved="resolved"></response>
+
+[6528] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="65280003" resolved="resolved"></response>
+
+[6528] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="65280004" resolved="resolved"></response>
+
+[6528] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[6528] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="65280005" resolved="resolved"></response>
+
+[6528] [Step Debug] <- run -i 10
+[23276] Log opened at 2024-06-15 15:52:22.985588
+[23276] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[23276] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[23276] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="23276" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[23276] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[23276] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[23276] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[23276] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[23276] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="232760001" resolved="unresolved"></response>
+
+[23276] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="232760002" resolved="resolved"></response>
+
+[23276] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="232760003" resolved="resolved"></response>
+
+[23276] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="232760004" resolved="resolved"></response>
+
+[23276] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[23276] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="232760005" resolved="resolved"></response>
+
+[23276] [Step Debug] <- run -i 10
+[27708] Log opened at 2024-06-15 16:00:18.353051
+[27708] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[27708] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[27708] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="27708" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[27708] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[27708] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[27708] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[27708] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[27708] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="277080001" resolved="unresolved"></response>
+
+[27708] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="277080002" resolved="resolved"></response>
+
+[27708] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="277080003" resolved="resolved"></response>
+
+[27708] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="277080004" resolved="resolved"></response>
+
+[27708] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="277080005" resolved="resolved"></response>
+
+[27708] [Step Debug] <- run -i 10
+[27708] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="10" status="stopping" reason="ok"></response>
+
+[27708] Log closed at 2024-06-15 16:00:18.923191
+
+[2676] Log opened at 2024-06-15 16:15:18.521034
+[2676] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[2676] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[2676] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="2676" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[2676] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[2676] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[2676] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[2676] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[2676] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="26760001" resolved="unresolved"></response>
+
+[2676] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="26760002" resolved="resolved"></response>
+
+[2676] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="26760003" resolved="resolved"></response>
+
+[2676] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="26760004" resolved="resolved"></response>
+
+[2676] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[2676] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="26760005" resolved="resolved"></response>
+
+[2676] [Step Debug] <- run -i 10
+[22320] Log opened at 2024-06-15 16:16:40.586065
+[22320] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[22320] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22320] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="22320" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[22320] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[22320] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[22320] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[22320] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[22320] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="223200001" resolved="unresolved"></response>
+
+[22320] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="223200002" resolved="resolved"></response>
+
+[22320] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="223200003" resolved="resolved"></response>
+
+[22320] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="223200004" resolved="resolved"></response>
+
+[22320] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[22320] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="223200005" resolved="resolved"></response>
+
+[22320] [Step Debug] <- run -i 10
+[22596] Log opened at 2024-06-15 16:20:28.532920
+[22596] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[22596] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22596] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="22596" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[22596] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[22596] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[22596] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[22596] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[22596] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="225960001" resolved="unresolved"></response>
+
+[22596] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="225960002" resolved="resolved"></response>
+
+[22596] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="225960003" resolved="resolved"></response>
+
+[22596] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="225960004" resolved="resolved"></response>
+
+[22596] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="225960005" resolved="resolved"></response>
+
+[22596] [Step Debug] <- run -i 10
+[22596] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="10" status="stopping" reason="ok"></response>
+
+[22596] Log closed at 2024-06-15 16:20:29.570747
+
+[35044] Log opened at 2024-06-15 16:20:54.150608
+[35044] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[35044] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[35044] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="35044" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[35044] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[35044] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[35044] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[35044] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[35044] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="350440001" resolved="unresolved"></response>
+
+[35044] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="350440002" resolved="resolved"></response>
+
+[35044] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="350440003" resolved="resolved"></response>
+
+[35044] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="350440004" resolved="resolved"></response>
+
+[35044] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="350440005" resolved="resolved"></response>
+
+[35044] [Step Debug] <- run -i 10
+[35044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="10" status="stopping" reason="ok"></response>
+
+[35044] Log closed at 2024-06-15 16:20:54.761875
+
+[16500] Log opened at 2024-06-15 16:22:22.577833
+[16500] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[16500] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[16500] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="16500" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[16500] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[16500] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[16500] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[16500] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[16500] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="165000001" resolved="unresolved"></response>
+
+[16500] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="165000002" resolved="resolved"></response>
+
+[16500] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="165000003" resolved="resolved"></response>
+
+[16500] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="165000004" resolved="resolved"></response>
+
+[16500] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[16500] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="165000005" resolved="resolved"></response>
+
+[16500] [Step Debug] <- run -i 10
+[35196] Log opened at 2024-06-15 16:22:36.847832
+[35196] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[35196] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[35196] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="35196" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[35196] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[35196] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[35196] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[35196] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[35196] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="351960001" resolved="unresolved"></response>
+
+[35196] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="351960002" resolved="resolved"></response>
+
+[35196] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="351960003" resolved="resolved"></response>
+
+[35196] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="351960004" resolved="resolved"></response>
+
+[35196] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[35196] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="351960005" resolved="resolved"></response>
+
+[35196] [Step Debug] <- run -i 10
+[28328] Log opened at 2024-06-15 16:23:05.296620
+[28328] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[28328] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[28328] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="28328" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[28328] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[28328] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[28328] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[28328] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[28328] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="283280001" resolved="unresolved"></response>
+
+[28328] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="283280002" resolved="resolved"></response>
+
+[28328] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="283280003" resolved="resolved"></response>
+
+[28328] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="283280004" resolved="resolved"></response>
+
+[28328] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[28328] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="283280005" resolved="resolved"></response>
+
+[28328] [Step Debug] <- run -i 10
+[12540] Log opened at 2024-06-15 16:23:58.403827
+[12540] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[12540] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[12540] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="12540" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[12540] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[12540] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[12540] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[12540] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[12540] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="125400001" resolved="unresolved"></response>
+
+[12540] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="125400002" resolved="resolved"></response>
+
+[12540] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="125400003" resolved="resolved"></response>
+
+[12540] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="125400004" resolved="resolved"></response>
+
+[12540] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[12540] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="125400005" resolved="resolved"></response>
+
+[12540] [Step Debug] <- run -i 10
+[33680] Log opened at 2024-06-15 16:26:26.241768
+[33680] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[33680] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[33680] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///D:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/artisan" language="PHP" xdebug:language_version="8.2.11" protocol_version="1.0" appid="33680" idekey="VSCODE"><engine version="3.2.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[33680] [Step Debug] <- feature_set -i 1 -n max_children -v 100
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="max_children" success="1"></response>
+
+[33680] [Step Debug] <- feature_set -i 2 -n max_data -v 8192
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_data" success="1"></response>
+
+[33680] [Step Debug] <- feature_set -i 3 -n notify_ok -v 1
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="notify_ok" success="1"></response>
+
+[33680] [Step Debug] <- feature_set -i 4 -n resolved_breakpoints -v 1
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="resolved_breakpoints" success="1"></response>
+
+[33680] [Step Debug] <- breakpoint_set -i 5 -t line -f file:///d:/Users/muril/Documents/repository/unidavi/DoeAqui/doeaqui/app/Http/Controllers/PessoaController.php -n 19
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="336800001" resolved="unresolved"></response>
+
+[33680] [Step Debug] <- breakpoint_set -i 6 -t exception -x "Error"
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="336800002" resolved="resolved"></response>
+
+[33680] [Step Debug] <- breakpoint_set -i 7 -t exception -x "Fatal error"
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="336800003" resolved="resolved"></response>
+
+[33680] [Step Debug] <- breakpoint_set -i 8 -t exception -x "Parse error"
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="336800004" resolved="resolved"></response>
+
+[33680] [Step Debug] <- breakpoint_set -i 9 -t exception -x "Unknown error"
+[33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="336800005" resolved="resolved"></response>
+
+[33680] [Step Debug] <- run -i 10
