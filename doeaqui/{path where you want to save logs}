@@ -553,3 +553,28 @@
 [33680] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="336800005" resolved="resolved"></response>
 
 [33680] [Step Debug] <- run -i 10
+[4920] Log opened at 2024-06-16 15:06:23.581634
+[4920] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[4920] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[4920] Log closed at 2024-06-16 15:06:23.794088
+
+[1856] Log opened at 2024-06-16 15:13:11.264248
+[1856] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[1856] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[1856] Log closed at 2024-06-16 15:13:11.470730
+
+[10696] Log opened at 2024-06-16 15:14:38.968904
+[10696] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[10696] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[7348] Log opened at 2024-06-16 15:16:31.443980
+[7348] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[7348] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[7348] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[7348] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[7348] Log closed at 2024-06-16 15:16:32.634563
+
+[10696] Log closed at 2024-06-16 15:16:32.818892
+
+[9048] Log opened at 2024-06-16 15:19:25.680990
+[9048] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9003.
+[9048] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
