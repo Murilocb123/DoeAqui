@@ -20,4 +20,15 @@ class ColetaEndereco extends Model
         'uf',
         'pais'
     ];
+
+    protected $casts = [
+        'cep' =>'string',
+        'rua' => 'string',
+        'numero' => 'string',
+        'complemento' => 'string',
+        'bairro' => 'string',
+        'cidade' => 'string',
+        'uf' => 'string',
+        'pais' => 'string'
+    ];
 }

@@ -23,9 +23,9 @@ class DoacaoForma extends Model
         'valor' => 'decimal(10,2)',
         'quantidade' => 'integer',
         'tipo' => 'string',
-        'id_pagamento' => '', 
-        'id_ponto_coleta' => '',
-        'id_item' =>'', 
-        'id_doadao'
+        'id_pagamento' => 'integer', 
+        'id_ponto_coleta' => 'integer',
+        'id_item' =>'integer', 
+        'id_doadao' =>'integer'
     ];
 }
