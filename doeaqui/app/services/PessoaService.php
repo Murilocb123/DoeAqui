@@ -6,20 +6,46 @@ use App\Models\Pessoa;
 
 class PessoaService
 {
-    public function __construct()
+    private Pessoa $pessoa;
+    public function __construct(Pessoa $pessoa)
     {
-        //
+        $this->pessoa = $pessoa;
     }
 
+    /**
+     * Create a new pessoa
+     * 
+     * @route POST /pessoa
+     * @param array $data
+     * @return int $id - Pessoa criado id
+     */
     public function create(array $data): int
     {
-        Pessoa::create($data);
-        return Pessoa::latest()->first()->id;
+        return $this->pessoa->create($data)->id;
     }
 
+    /**
+     * Find a pessoa by id
+     * 
+     * @route GET /pessoa/{id}
+     * @param int $id
+     * @return array $pessoa
+     */
+    public function findById(int $id): array
+    {
+        return $this->pessoa->find($id)->toArray();
+    }
+
+    /**
+     * Find all pessoas
+     * TODO: Add pagination
+     * 
+     * @route GET /pessoa
+     * @return array $pessoas
+     */
     public function findAll(): array
     {
-        return Pessoa::all()->toArray();
+        return $this->pessoa->all()->toArray();
     }
 
 
