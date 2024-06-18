@@ -21,3 +21,14 @@ Projeto criado na materia de desenvolvimento web 2, com o intuito de criar um si
 - `composer install`
 - `php artisan migrate` obs.: so se nao tiver rodado as migrations
 - `php artisan serve`
+### instalando o Mary/Ui
+- `composer require robsontenorio/mary`
+- `php artisan mary:install`
+- `npm run build` > builda o front-end
+- `php artisan serve` > roda o servidor
+
+## instalacao icones
+- `composer require blade-ui-kit/blade-ui-kit`
+### utilização do Mary/Ui
+- Criar componentes: `php artisan make:livewire ComponentName`
+

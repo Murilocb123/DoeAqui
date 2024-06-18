@@ -16,6 +16,20 @@ class PessoaController extends Controller
         $this->pessoaService = $pessoaService;
     }
 
+    /*------------------ Views------------------*/
+    public function index()
+    {
+        return view('pessoa.list');
+    }
+
+    public function createView()
+    {
+        return view('pessoa.create');
+    }
+
+
+
+    /*------------------ Back-end------------------*/
     public function create(Request $request)
     {
         $id = $this->pessoaService->create($request->all());
