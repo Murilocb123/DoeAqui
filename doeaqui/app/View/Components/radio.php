@@ -25,7 +25,7 @@ class radio extends Component
         $this->name = $name;
         $this->options = $options;
         $this->value = $value;
-        if($this->value = null){
+        if($this->value != null){
         foreach ($this->options as $key => $option) {
             if ($option['value'] == $this->value) {
                 $this->options[$key]['selected'] = true;

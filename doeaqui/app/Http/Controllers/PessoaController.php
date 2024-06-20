@@ -39,13 +39,15 @@ class PessoaController extends Controller
     public function create(Request $request)
     {
         $id = $this->pessoaService->create($request->all());
-        return response()->json(['id' => $id]);
+        return redirect()->route('pessoa-index');
     }
+
+    //TODO: tratar se deu 1 se deu certo ou 0 se deu errado
 
     public function update(Request $request, int $id)
     {
         $idReturn = $this->pessoaService->update($id, $request->all());
-        return response()->json(['id' => $idReturn]);
+        return redirect()->route('pessoa-index');
     }
 
     public function findAll()
