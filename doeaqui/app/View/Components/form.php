@@ -9,16 +9,42 @@ use Illuminate\View\Component;
 class form extends Component
 {
 
-    public $method = 'POST';
-    public $action = '';
+    public $method;
+    public $actionCreate = '';
+    public $actionEdit = '';
+
+    public $action;
+    public $titulo = '';
+
+    public $id;
+
+    public $redirect;
+
     /**
      * Create a new component instance.
      */
-    public function __construct($method, $action)
+    public function __construct($actionCreate,$actionEdit, $titulo = '', $id = null, $redirect = null)
     {
-        $this->method = $method;
-        $this->action = $action;
+        $this->actionCreate = $actionCreate;
+        $this->titulo = $titulo;
+        $this->id = $id;
+        $this->redirect = $redirect;
+        $this->actionEdit = $actionEdit;
+
+        if($this->id == null){
+            $this->action = $this->actionCreate;
+            if($this->method==null){
+                $this->method = 'POST';
+            }
+        }else{
+            $this->action = $this->actionEdit;
+            if($this->method==null){
+                $this->method = 'PUT';
+            }
+        }
+        
     }
+    
 
     /**
      * Get the view / contents that represent the component.

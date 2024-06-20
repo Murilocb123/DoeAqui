@@ -1,4 +1,4 @@
-<div class="mb-3 form-group">
+<div class="col-md-{{ $columnsmd }} col-{{ $columnsxs }}">
   <label for="input-{{ $name }}" class="form-label">{{ $label }}</label>
-  <input type="{{ $type }}" class="form-control" id="input-{{ $name }}" placeholder="{{ $placeholder }}">
+  <input name="{{$name}}" type="{{ $type }}" class="form-control" id="input-{{ $name }}" placeholder="{{ $placeholder }}" value="{{$value}} "{{$required?'required':''}}>
 </div>

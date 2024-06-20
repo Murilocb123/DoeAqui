@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class PessoaController extends Controller
 {
-    private PessoaService$pessoaService;
+    private PessoaService $pessoaService;
 
     public function __construct(PessoaService $pessoaService)
     {
@@ -17,6 +17,7 @@ class PessoaController extends Controller
     }
 
     /*------------------ Views------------------*/
+    
     public function index()
     {
         return view('pessoa.list');
@@ -24,9 +25,14 @@ class PessoaController extends Controller
 
     public function createView()
     {
-        return view('pessoa.create');
+        return view('pessoa.pessoa')->with('isEdicao', false)->with('pessoa', new Pessoa());
     }
 
+    public function editView(int $id)
+    {
+        $pessoa = $this->pessoaService->findById($id);
+        return view('pessoa.pessoa')->with('isEdicao',true)->with('pessoa', $pessoa);
+    }
 
 
     /*------------------ Back-end------------------*/
@@ -34,6 +40,12 @@ class PessoaController extends Controller
     {
         $id = $this->pessoaService->create($request->all());
         return response()->json(['id' => $id]);
+    }
+
+    public function update(Request $request, int $id)
+    {
+        $idReturn = $this->pessoaService->update($id, $request->all());
+        return response()->json(['id' => $idReturn]);
     }
 
     public function findAll()

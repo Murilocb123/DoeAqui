@@ -12,37 +12,21 @@ class PessoaService
         $this->pessoa = $pessoa;
     }
 
-    /**
-     * Create a new pessoa
-     * 
-     * @route POST /pessoa
-     * @param array $data
-     * @return int $id - Pessoa criado id
-     */
     public function create(array $data): int
     {
         return $this->pessoa->create($data)->id;
     }
 
-    /**
-     * Find a pessoa by id
-     * 
-     * @route GET /pessoa/{id}
-     * @param int $id
-     * @return array $pessoa
-     */
+    public function update(int $id, array $data): int
+    {
+       return $this->pessoa->find($id)->update($data);
+    }
+
     public function findById(int $id): array
     {
         return $this->pessoa->find($id)->toArray();
     }
 
-    /**
-     * Find all pessoas
-     * TODO: Add pagination
-     * 
-     * @route GET /pessoa
-     * @return array $pessoas
-     */
     public function findAll(): array
     {
         return $this->pessoa->all()->toArray();
