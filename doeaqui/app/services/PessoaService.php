@@ -31,6 +31,4 @@ class PessoaService
     {
         return $this->pessoa->all()->toArray();
     }
-
-
 }
