@@ -11,6 +11,8 @@ Projeto criado na materia de desenvolvimento web 2, com o intuito de criar um si
 - `php artisan make:migration create_table_name`
 - `php artisan migrate`
 - `php artisan migrate:refresh`
+- `php artisan make:component ComponentName`
+- `php artisan make:view view-name`
 ---
 ## Comandos personalizados:
 - `php artisan make:service ServiceName`
@@ -31,4 +33,5 @@ Projeto criado na materia de desenvolvimento web 2, com o intuito de criar um si
 - `composer require blade-ui-kit/blade-ui-kit`
 ### utilização do Mary/Ui
 - Criar componentes: `php artisan make:livewire ComponentName`
+
 
