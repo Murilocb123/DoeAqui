@@ -14,7 +14,7 @@
                         <a class="nav-link" href="/pessoa">Pessoas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/doacao">Doacao</a>
+                        <a class="nav-link" href="/doacao">Doação</a>
                     </li>
                 </ul>
             </div>

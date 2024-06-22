@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\Doacao;
+use App\Services\PessoaService;
 
 class DoacaoService
 {
