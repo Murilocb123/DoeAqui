@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class DoacaoController extends Controller
 {
-    private DoacaoService$doacaoService;
+    private DoacaoService $doacaoService;
 
     public function __construct(DoacaoService $doacaoService)
     {

@@ -2,23 +2,34 @@
 
 namespace App\Services;
 
+use App\Models\Doacao;
 use App\Models\DoacaoEndereco;
 
 class DoacaoEnderecoService
 {
-    public function __construct()
+    private DoacaoEndereco $doacaoEndereco;
+    public function __construct(DoacaoEndereco $doacaoEndereco)
     {
-        //
+        $this->doacaoEndereco = $doacaoEndereco;
     }
 
     public function create(array $data): int
     {
-        DoacaoEndereco::create($data);
-        return DoacaoEndereco::latest()->first()->id;
+        return $this->doacaoEndereco->create($data)->id;
+    }
+
+    public function update(int $id, array $data): int
+    {
+       return $this->doacaoEndereco->find($id)->update($data);
+    }
+
+    public function findById(int $id): array
+    {
+        return $this->doacaoEndereco->find($id)->toArray();
     }
 
     public function findAll(): array
     {
-        return DoacaoEndereco::all()->toArray();
+        return $this->doacaoEndereco->all()->toArray();
     }
 }

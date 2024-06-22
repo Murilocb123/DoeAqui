@@ -17,6 +17,9 @@
                         <a class="nav-link" href="/doacao">Doação</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/endereco">Endereço</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>

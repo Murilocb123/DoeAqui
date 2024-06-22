@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EnderecoController;
 use App\Http\Controllers\DoacaoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PessoaController;
@@ -22,3 +23,10 @@ Route::get('/doacao/create', DoacaoController::class . '@createView')->name('doa
 Route::get('/doacao/edit/{id}', DoacaoController::class . '@editView')->name('doacao-edit-view');
 Route::POST('/doacao/create', DoacaoController::class . '@create')->name('doacao-create');
 Route::PUT('/doacao/edit/{id}', DoacaoController::class . '@update')->name('doacao-update');
+
+/*------------------ Endereco ------------------*/
+Route::get('/endereco', EnderecoController::class . '@index')->name('endereco-index');
+Route::get('/endereco/create', EnderecoController::class . '@createView')->name('endereco-create-view');
+Route::get('/endereco/edit/{id}', EnderecoController::class . '@editView')->name('endereco-edit-view');
+Route::POST('/endereco/create', EnderecoController::class . '@create')->name('endereco-create');
+Route::PUT('/endereco/edit/{id}', EnderecoController::class . '@update')->name('endereco-update');
