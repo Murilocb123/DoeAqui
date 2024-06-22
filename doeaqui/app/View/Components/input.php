@@ -20,12 +20,14 @@ class input extends Component
     public $value = '';
     public $required = false;
 
+    public $visualizacao = false;
+
 
 
     /**
      * Create a new component instance.
      */
-    public function __construct($label, $type, $name, $placeholder, $columnsxs = 12, $columnsmd = 1, $value = '', $required = false)
+    public function __construct($label, $type, $name, $placeholder, $columnsxs = 12, $columnsmd = 1, $value = '', $required = false, $visualizacao = false)
     {
         $this->label = $label;
         $this->type = $type;
@@ -35,6 +37,7 @@ class input extends Component
         $this->columnsmd = $columnsmd;
         $this->value = $value;
         $this->required = $required;
+        $this->visualizacao = $visualizacao;
 
     }
     
