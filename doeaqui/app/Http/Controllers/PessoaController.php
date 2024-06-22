@@ -20,20 +20,26 @@ class PessoaController extends Controller
     
     public function index()
     {
-        return view('pessoa.list');
+        $pessoaList = $this->pessoaService->findAll();
+        return view('pessoa.list')->with('pessoas', json_encode($pessoaList));
     }
 
     public function createView()
     {
-        return view('pessoa.pessoa')->with('isEdicao', false)->with('pessoa', new Pessoa());
+        return view('pessoa.pessoa')->with('visualizacao', false)->with('pessoa', new Pessoa());
     }
 
     public function editView(int $id)
     {
         $pessoa = $this->pessoaService->findById($id);
-        return view('pessoa.pessoa')->with('isEdicao',true)->with('pessoa', $pessoa);
+        return view('pessoa.pessoa')->with('visualizacao',false)->with('pessoa', $pessoa);
     }
 
+    public function previewView(int $id)
+    {
+        $pessoa = $this->pessoaService->findById($id);
+        return view('pessoa.pessoa')->with('visualizacao',true)->with('pessoa', $pessoa);
+    }
 
     /*------------------ Back-end------------------*/
     public function create(Request $request)
@@ -47,6 +53,12 @@ class PessoaController extends Controller
     public function update(Request $request, int $id)
     {
         $idReturn = $this->pessoaService->update($id, $request->all());
+        return redirect()->route('pessoa-index');
+    }
+
+    public function delete(int $id)
+    {
+        $this->pessoaService->delete($id);
         return redirect()->route('pessoa-index');
     }
 

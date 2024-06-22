@@ -15,15 +15,18 @@ class button extends Component
     
     public $href = null;
 
+    public $visualizacao;
+
     /**
      * Create a new component instance.
      */
-    public function __construct($type, $label, $styleclass, $href = null)
+    public function __construct($type, $label, $styleclass, $href = null, $visualizacao = false)
     {
         $this->type = $type;
         $this->label = $label;
         $this->styleclass = $styleclass;
         $this->href = $href;
+        $this->visualizacao = $visualizacao;
     }
 
     /**

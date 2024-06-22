@@ -22,6 +22,11 @@ class PessoaService
        return $this->pessoa->find($id)->update($data);
     }
 
+    public function delete(int $id): int
+    {
+       return $this->pessoa->find($id)->delete();
+    }
+
     public function findById(int $id): array
     {
         return $this->pessoa->find($id)->toArray();
