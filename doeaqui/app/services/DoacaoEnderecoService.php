@@ -23,6 +23,11 @@ class DoacaoEnderecoService
        return $this->doacaoEndereco->find($id)->update($data);
     }
 
+    public function delete(int $id): int
+    {
+       return $this->doacaoEndereco->find($id)->delete();
+    }
+
     public function findById(int $id): array
     {
         return $this->doacaoEndereco->find($id)->toArray();
