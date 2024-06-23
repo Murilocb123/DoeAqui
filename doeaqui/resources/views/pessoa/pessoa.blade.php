@@ -5,7 +5,7 @@
         <x-form actionEdit="/pessoa/edit/{{$pessoa['id']}}" actionCreate="/pessoa/create" id="{{$pessoa['id']}}" titulo="Pessoa" redirect="/pessoa">
             <x-input value="{{$pessoa['nome']}}" columnsmd="12" type="text" name="nome" label="Nome"
                 placeholder="Nome" required=true visualizacao="{{$visualizacao}}"/>
-            <x-input value=" {{$pessoa['telefone']}}" columnsmd="12" type="text" name="telefone" label="Telefone"
+            <x-input value="{{$pessoa['telefone']}}" columnsmd="12" type="text" name="telefone" label="Telefone"
                 placeholder="(47) 0 0000-0000" required=true visualizacao="{{$visualizacao}}"/>
             <x-input value="{{$pessoa['cpf_cnpj']}}" columnsmd="12" type="text" name="cpf_cnpj" label="CPF/CNPJ"
                 placeholder="CPF/CNPJ" required=true visualizacao="{{$visualizacao}}"/>
