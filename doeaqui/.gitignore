@@ -20,3 +20,4 @@ yarn-error.log
 /{path where you want to save logs}
 .env
 public/{path where you want to save logs}
+.log
