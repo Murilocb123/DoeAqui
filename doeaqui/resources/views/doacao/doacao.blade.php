@@ -1,15 +1,18 @@
 @extends('layout.base')
 @section('viewName', 'DoeAqui')
 @section('content')
+<script>
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
     <div>
         <x-form actionEdit="/doacao/edit/{{$doacao['id']}}" actionCreate="/doacao/create" id="{{$doacao['id']}}" titulo="doacao" redirect="/doacao">
-           {{-- <x-select value="{{$doacao['pessoa']}}" name="pessoa" label="Pessoa" 
-            :options="[
-                ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
-                ['value' => 'Parado', 'label' => 'Parado', 'selected' => false],
-            ]"/>--}}
-            <x-input value="{{$doacao['pessoa']}}" columnsmd="12" type="number" name="pessoa" label="Pessoa"
-                placeholder="Pessoa" required=true/>            
+           <x-select value="{{$doacao['pessoa']}}" name="pessoa" label="Pessoa" 
+            :options="$pessoaListSelect"/> 
             <x-input value="{{$doacao['titulo']}}" columnsmd="12" type="text" name="titulo" label="Titulo"
                 placeholder="título" required=true/>
             <x-input value=" {{$doacao['Descricao']}}" columnsmd="12" type="text" name="Descricao" label="Descricao"

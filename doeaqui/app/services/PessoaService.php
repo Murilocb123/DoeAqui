@@ -36,4 +36,18 @@ class PessoaService
     {
         return $this->pessoa->all()->toArray();
     }
+
+    public function findAllSelect(): array
+    {
+        $pessoa = $this->pessoa->all()->toArray();
+        $pessoaListSelect = [];
+        // ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
+        $index = 0;
+        foreach ($pessoa as $p) {
+            $pessoaListSelect[$index] = ['value' => $p['id'], 'label' => $p['nome'], 'selected' => false];
+            $index++;
+        }
+        $pessoaListSelect[$index] = ['value' => '', 'label' => 'Selecione', 'selected' => true];
+        return $pessoaListSelect;
+    }
 }

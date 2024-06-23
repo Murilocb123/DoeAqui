@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Services\DoacaoService;
 use App\Models\Doacao;
+use App\Services\PessoaService;
 use Illuminate\Http\Request;
 
 class DoacaoController extends Controller
 {
     private DoacaoService $doacaoService;
+    private PessoaService $pessoaService;
 
-    public function __construct(DoacaoService $doacaoService)
+    public function __construct(DoacaoService $doacaoService, PessoaService $pessoaService)
     {
         $this->doacaoService = $doacaoService;
+        $this->pessoaService = $pessoaService;
     }
-
    /*------------------ Views------------------*/
 
    public function index()
@@ -24,7 +26,9 @@ class DoacaoController extends Controller
 
    public function createView()
    {
-       return view('doacao.doacao')->with('isEdicao', false)->with('doacao', new Doacao());
+       return view('doacao.doacao')->with('isEdicao', false)
+       ->with('doacao', new Doacao())
+       ->with('pessoaListSelect', $this->pessoaService->findAllSelect());
    }
 
    public function editView(int $id)
