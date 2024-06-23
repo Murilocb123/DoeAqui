@@ -3,25 +3,21 @@
 @section('content')
     <div>
         <x-form actionEdit="/doacao/edit/{{$doacao['id']}}" actionCreate="/doacao/create" id="{{$doacao['id']}}" titulo="doacao" redirect="/doacao">
-           {{-- <x-select value="{{$doacao['pessoa']}}" name="pessoa" label="Pessoa" 
-            :options="[
-                ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
-                ['value' => 'Parado', 'label' => 'Parado', 'selected' => false],
-            ]"/>--}}
-            <x-input value="{{$doacao['pessoa']}}" columnsmd="12" type="number" name="pessoa" label="Pessoa"
-                placeholder="Pessoa" required=true/>            
             <x-input value="{{$doacao['titulo']}}" columnsmd="12" type="text" name="titulo" label="Titulo"
                 placeholder="título" required=true/>
-            <x-input value=" {{$doacao['Descricao']}}" columnsmd="12" type="text" name="Descricao" label="Descricao"
-                placeholder="Descrição" required=true/>
+            <x-input value=" {{$doacao['finalidade']}}" columnsmd="12" type="text" name="finalidade" label="Finalidade"
+                placeholder="Finalidade" required=true/>
             <x-select value="{{$doacao['status']}}" name="status" label="Status" 
             :options="[
                 ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
                 ['value' => 'Parado', 'label' => 'Parado', 'selected' => false],
             ]"/>
-           <x-input value="{{$doacao['imagem']}}" columnsmd="5"  type="file" name="imagem[]" label="imagem"
-                placeholder="imagem" required=true/>  {{-- precisa adicionar multiple para varias fotos --}}
-           
+            <x-input value="{{$doacao['email']}}" columnsmd="12" type="email" name="email" label="Email"
+                placeholder="Email" required=true/>
+            <x-radio value="{{$doacao['tipo']}}" name="tipo" label="Tipo" :options="[
+                ['value' => 'FISICA', 'label' => 'Física', 'selected' => true],
+                ['value' => 'JURIDICA', 'label' => 'Jurídica', 'selected' => false],
+            ]" required=true/>
             <div class="row gy-3">
                 <div class="col-md-6 col-6 d-flex justify-content-start">
                     <x-button href="/doacao" styleclass="danger" type="button" label="Cancelar" />
