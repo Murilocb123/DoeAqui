@@ -1,21 +1,15 @@
 @extends('layout.base')
 @section('viewName', 'DoeAqui')
 @section('content')
-<script>
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-</script>
     <div>
-        <x-form actionEdit="/doacao/edit/{{$doacao['id']}}" actionCreate="/doacao/create" id="{{$doacao['id']}}" titulo="doacao" redirect="/doacao">
-           <x-select value="{{$doacao['pessoa']}}" name="pessoa" label="Pessoa" 
-            :options="$pessoaListSelect"/> 
+        <x-form actionEdit="/doacao/edit/{{$doacao['id']}}" actionCreate="/doacao/create" id="{{$doacao['id']}}" titulo="doação" redirect="/doacao">
+            <x-select value="{{$doacao['id_beneficiario']}}" name="id_beneficiario" label="Pessoa" 
+                :options="$pessoaListSelect"/>
+            <x-select value="{{$doacao['id_doacao_destino']}}" name="id_doacao_destino" label="Endereco" 
+                :options="$EnderecoListSelect"/>      
             <x-input value="{{$doacao['titulo']}}" columnsmd="12" type="text" name="titulo" label="Titulo"
                 placeholder="título" required=true/>
-            <x-input value=" {{$doacao['Descricao']}}" columnsmd="12" type="text" name="Descricao" label="Descricao"
+            <x-input value="{{$doacao['descricao']}}" columnsmd="12" type="text" name="descricao" label="Descricao"
                 placeholder="Descrição" required=true/>
             <x-select value="{{$doacao['status']}}" name="status" label="Status" 
             :options="[
@@ -23,7 +17,7 @@ myModal.addEventListener('shown.bs.modal', () => {
                 ['value' => 'Parado', 'label' => 'Parado', 'selected' => false],
             ]"/>
            <x-input value="{{$doacao['imagem']}}" columnsmd="5"  type="file" name="imagem[]" label="imagem"
-                placeholder="imagem" required=true/>  {{-- precisa adicionar multiple para varias fotos --}}
+                placeholder="imagem"/>  {{-- precisa adicionar multiple para varias fotos --}}
            
             <div class="row gy-3">
                 <div class="col-md-6 col-6 d-flex justify-content-start">

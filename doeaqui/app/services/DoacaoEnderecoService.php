@@ -37,4 +37,18 @@ class DoacaoEnderecoService
     {
         return $this->doacaoEndereco->all()->toArray();
     }
+
+    public function findAllSelect(): array
+    {
+        $doacaoEndereco = $this->doacaoEndereco->all()->toArray();
+        $EnderecoListSelect = [];
+        // ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
+        $index = 0;
+        foreach ($doacaoEndereco as $p) {
+            $EnderecoListSelect[$index] = ['value' => $p['id'], 'label' => $p['cidade'], 'selected' => false];
+            $index++;
+        }
+        $EnderecoListSelect[$index] = ['value' => '', 'label' => 'Selecione', 'selected' => true];
+        return $EnderecoListSelect;
+    }
 }

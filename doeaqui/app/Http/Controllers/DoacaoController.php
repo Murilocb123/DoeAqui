@@ -3,19 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Services\DoacaoService;
-use App\Models\Doacao;
 use App\Services\PessoaService;
+use App\Services\DoacaoEnderecoService;
+use App\Models\Doacao;
+use App\Models\DoacaoEndereco;
 use Illuminate\Http\Request;
 
 class DoacaoController extends Controller
 {
     private DoacaoService $doacaoService;
     private PessoaService $pessoaService;
+    private DoacaoEnderecoService $doacaoEnderecoService;
 
-    public function __construct(DoacaoService $doacaoService, PessoaService $pessoaService)
+    public function __construct(DoacaoService $doacaoService, PessoaService $pessoaService, DoacaoEnderecoService $doacaoEnderecoService)
     {
         $this->doacaoService = $doacaoService;
         $this->pessoaService = $pessoaService;
+        $this->doacaoEnderecoService = $doacaoEnderecoService;
     }
    /*------------------ Views------------------*/
 
@@ -28,7 +32,8 @@ class DoacaoController extends Controller
    {
        return view('doacao.doacao')->with('isEdicao', false)
        ->with('doacao', new Doacao())
-       ->with('pessoaListSelect', $this->pessoaService->findAllSelect());
+       ->with('pessoaListSelect', $this->pessoaService->findAllSelect())
+       ->with('EnderecoListSelect', $this->doacaoEnderecoService->findAllSelect());
    }
 
    public function editView(int $id)
@@ -42,7 +47,8 @@ class DoacaoController extends Controller
 public function create(Request $request)
 {
     $id = $this->doacaoService->create($request->all());
-    return response()->json(['id' => $id]);
+   // return response()->json(['id' => $id]);
+   return redirect()->route('doacao-index');
 }
 
 //TODO: tratar se deu 1 se deu certo ou 0 se deu errado

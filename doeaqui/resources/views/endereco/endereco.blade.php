@@ -5,7 +5,7 @@
         <x-form actionEdit="/endereco/edit/{{$endereco['id']}}" actionCreate="/endereco/create" id="{{$endereco['id']}}" titulo="endereco" redirect="/endereco">
             <x-input value="{{$endereco['cep']}}" columnsmd="12" type="text" name="cep" label="Cep"
                 placeholder="00.000-000" required=true/>
-            <x-input value=" {{$endereco['rua']}}" columnsmd="12" type="text" name="rua" label="Rua"
+            <x-input value="{{$endereco['rua']}}" columnsmd="12" type="text" name="rua" label="Rua"
                 placeholder="Rua São João" required=true/>
             <x-input value="{{$endereco['numero']}}" columnsmd="12" type="number" name="numero" label="Numero"
                 placeholder="000" required=true/>

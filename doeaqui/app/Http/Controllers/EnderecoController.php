@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class EnderecoController extends Controller
 {
     private DoacaoEnderecoService $doacaoEnderecoService;
-    private ColetaEnderecoService $coletaEnderecoService;
+    //private ColetaEnderecoService $coletaEnderecoService;
 
     public function __construct(DoacaoEnderecoService $doacaoEnderecoService)
     {
