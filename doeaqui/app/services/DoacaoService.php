@@ -15,6 +15,19 @@ class DoacaoService
 
     public function create(array $data): int
     {
+        $request= request();
+
+        $path = '';
+        if($request->hasFile('imagem')){
+            $filenameWithExt = $request->file('imagem')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('imagem')->getClientOriginalExtension();
+            $fileNameToStore= $filename.'_'.time().'.'.$extension;
+            $path = $request->file('imagem')->storeAs('public/imagem', $fileNameToStore);
+        }
+
+        $data['caminho_imagem'] = $path;
+
         return $this->doacao->create($data)->id;
     }
 
@@ -22,6 +35,7 @@ class DoacaoService
     {
        return $this->doacao->find($id)->update($data);
     }
+    
 
     public function findById(int $id): array
     {

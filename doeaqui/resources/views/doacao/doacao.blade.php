@@ -16,7 +16,7 @@
                 ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
                 ['value' => 'Parado', 'label' => 'Parado', 'selected' => false],
             ]"/>
-           <x-input value="{{$doacao['imagem']}}" columnsmd="5"  type="file" name="imagem[]" label="imagem"
+           <x-input value="{{$doacao['caminho_imagem']}}" columnsmd="5"  type="file" name="imagem" label="imagem"
                 placeholder="imagem"/>  {{-- precisa adicionar multiple para varias fotos --}}
            
             <div class="row gy-3">

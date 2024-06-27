@@ -47,7 +47,8 @@ class DoacaoController extends Controller
 public function create(Request $request)
 {
     $id = $this->doacaoService->create($request->all());
-   // return response()->json(['id' => $id]);
+
+
    return redirect()->route('doacao-index');
 }
 

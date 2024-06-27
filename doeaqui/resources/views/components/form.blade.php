@@ -1,5 +1,5 @@
 
-<form class="row g-3" method="POST" action="{{$action}}" >
+<form class="row g-3" method="POST" action="{{$action}}"  enctype="multipart/form-data">
 @csrf
 @method($method)
             @if ($id && $id != '')
