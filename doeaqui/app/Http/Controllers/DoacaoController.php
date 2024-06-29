@@ -6,7 +6,6 @@ use App\Services\DoacaoService;
 use App\Services\PessoaService;
 use App\Services\DoacaoEnderecoService;
 use App\Models\Doacao;
-use App\Models\DoacaoEndereco;
 use Illuminate\Http\Request;
 
 class DoacaoController extends Controller
@@ -25,12 +24,13 @@ class DoacaoController extends Controller
 
    public function index()
    {
-       return view('doacao.list');
+       $doacaoList = $this->doacaoService->findAll();
+       return view('doacao.list')->with('doacoes', json_encode($doacaoList));
    }
 
    public function createView()
    {
-       return view('doacao.doacao')->with('isEdicao', false)
+       return view('doacao.doacao')->with('visualizacao', false)
        ->with('doacao', new Doacao())
        ->with('pessoaListSelect', $this->pessoaService->findAllSelect())
        ->with('EnderecoListSelect', $this->doacaoEnderecoService->findAllSelect());
@@ -39,7 +39,17 @@ class DoacaoController extends Controller
    public function editView(int $id)
    {
        $doacao = $this->doacaoService->findById($id);
-       return view('doacao.doacao')->with('isEdicao',true)->with('doacao', $doacao);
+       return view('doacao.doacao')->with('visualizacao',false)->with('doacao', $doacao)
+       ->with('pessoaListSelect', $this->pessoaService->findAllSelect())
+       ->with('EnderecoListSelect', $this->doacaoEnderecoService->findAllSelect());
+   }
+
+   public function previewView(int $id)
+   {
+       $doacao = $this->doacaoService->findById($id);
+       return view('doacao.doacao')->with('visualizacao',true)->with('doacao', $doacao)
+       ->with('pessoaListSelect', $this->pessoaService->findAllSelect())
+       ->with('EnderecoListSelect', $this->doacaoEnderecoService->findAllSelect());
    }
 
 
@@ -47,9 +57,7 @@ class DoacaoController extends Controller
 public function create(Request $request)
 {
     $id = $this->doacaoService->create($request->all());
-
-
-   return redirect()->route('doacao-index');
+    return redirect()->route('doacao-index');
 }
 
 //TODO: tratar se deu 1 se deu certo ou 0 se deu errado
@@ -57,7 +65,13 @@ public function create(Request $request)
 public function update(Request $request, int $id)
 {
     $idReturn = $this->doacaoService->update($id, $request->all());
-    return response()->json(['id' => $idReturn]);
+    return redirect()->route('doacao-index');
+}
+
+public function delete(int $id)
+{
+    $this->doacaoService->delete($id);
+    return redirect()->route('doacao-index');
 }
 
 public function findAll()

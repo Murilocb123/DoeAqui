@@ -36,6 +36,10 @@ class DoacaoService
        return $this->doacao->find($id)->update($data);
     }
     
+    public function delete(int $id): int
+    {
+       return $this->doacao->find($id)->delete();
+    }
 
     public function findById(int $id): array
     {
@@ -45,5 +49,19 @@ class DoacaoService
     public function findAll(): array
     {
         return $this->doacao->all()->toArray();
+    }
+
+    public function findAllSelect(): array
+    {
+        $doacao = $this->doacao->all()->toArray();
+        $doacaoListSelect = [];
+        // ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
+        $index = 0;
+        foreach ($doacao as $p) {
+            $doacaoListSelect[$index] = ['value' => $p['id'], 'label' => $p['nome'], 'selected' => false];
+            $index++;
+        }
+        $doacaoListSelect[$index] = ['value' => '', 'label' => 'Selecione', 'selected' => true];
+        return $doacaoListSelect;
     }
 }

@@ -13,6 +13,8 @@ Projeto criado na materia de desenvolvimento web 2, com o intuito de criar um si
 - `php artisan migrate:refresh`
 - `php artisan make:component ComponentName`
 - `php artisan make:view view-name`
+
+
 ---
 ## Comandos personalizados:
 - `php artisan make:service ServiceName`
@@ -23,6 +25,8 @@ Projeto criado na materia de desenvolvimento web 2, com o intuito de criar um si
 - `composer install`
 - `php artisan migrate` obs.: so se nao tiver rodado as migrations
 - `php artisan serve`
+- `php artisan storage:link`  obs.: para linkar a pasta publica files
+
 ### instalando o Mary/Ui
 - `composer require robsontenorio/mary`
 - `php artisan mary:install`

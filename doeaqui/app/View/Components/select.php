@@ -14,15 +14,18 @@ class select extends Component
     public $options;
     public $value;
 
+    public $visualizacao = false;
+
     /**
      * Create a new component instance.
      */
-    public function __construct($label, $name, $options, $value)
+    public function __construct($label, $name, $options, $value, $visualizacao = false)
     {
         $this->label = $label;
         $this->name = $name;
         $this->options = $options;
         $this->value = $value;
+        $this->visualizacao = $visualizacao;
         if($this->value != null){
         foreach ($this->options as $key => $option) {
             if ($option['value'] == $this->value) {
@@ -42,3 +45,5 @@ class select extends Component
         return view('components.select');
     }
 }
+
+

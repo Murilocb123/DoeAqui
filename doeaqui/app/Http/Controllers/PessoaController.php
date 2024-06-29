@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Dto\PessoaDto;
+//use App\Dto\PessoaDto;
 use App\Models\Pessoa;
 use App\Services\PessoaService;
 use Illuminate\Http\Request;

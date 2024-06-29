@@ -21,3 +21,4 @@ yarn-error.log
 .env
 public/{path where you want to save logs}
 *.log
+vendor
