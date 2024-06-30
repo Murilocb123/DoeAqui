@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome', 100);
             $table->string('email', 100);
             $table->string('telefone', 15);
-            $table->string('cpf_cnpj', 14);
+            $table->string('cpf_cnpj', 18);
             $table->string('tipo', 20)->default('FISICA'); // FISICA, JURIDICA
             $table->timestamps();
             });

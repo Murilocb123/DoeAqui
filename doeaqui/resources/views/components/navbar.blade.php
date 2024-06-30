@@ -7,17 +7,13 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-
                     <li class="nav-item">
-                        <a class="nav-link" href="/pessoa">Pessoas</a>
+                        <a class="nav-link" href="/doacao">Doações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/doacao">Doação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/endereco">Endereço</a>
+                        <a class="nav-link" href="/doacao/create">Criar doação</a>
                     </li>
                 </ul>
             </div>

@@ -12,9 +12,9 @@
                     </div> --}}
                 </div>
             </div>
-            <div class="col-md-12 col-12 d-flex justify-content-end px-0 my-2">
-                <x-button styleclass="primary gy-5" type="button" href="{{$rotaCriacao}}" text="Adicionar" label="Adicionar"/>
-            </div>
+<div class="col-md-12 col-12 d-flex justify-content-end px-0 my-2">
+    <x-button styleclass="primary gy-5" type="button" href="{{$rotaCriacao}}" text="Adicionar" label="Adicionar"/>
+</div>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                     <tr>
@@ -41,9 +41,11 @@
             </table>
             <div class="clearfix">
                 <div class="hint-text">Total de registros <b>{{sizeof($dados)}}</b></div>
-                {{-- tetste -{{json_encode($dados)}} --}}
- 
-
+            </div>
+            <div class="col-md-12 col-12 d-flex justify-content-end px-0 my-2">
+                <x-button styleclass="primary gy-5" type="button" href="/doacao" text="Adicionar" label="Doações"/>
+                <x-button styleclass="primary gy-5 ms-2" type="button" href="/endereco" text="Cancelar" label="Endereços"/>
+                <x-button styleclass="primary gy-5 ms-2" type="button" href="/pessoa" text="Cancelar" label="Pessoas"/>
             </div>
         </div>
     </div>  

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('doacao_endereco', function (Blueprint $table) {
             $table->id();
-            $table->string('cep', 8);
+            $table->string('cep', 10);
             $table->string('rua', 100);
             $table->string('numero', 10);
             $table->string('complemento', 50)->nullable();

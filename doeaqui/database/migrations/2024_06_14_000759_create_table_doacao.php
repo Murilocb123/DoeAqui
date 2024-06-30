@@ -17,7 +17,8 @@ return new class extends Migration
             $table->foreignId('id_beneficiario')->constrained('pessoa')->onDelete('cascade');
             $table->foreignId('id_doacao_destino')->constrained('doacao_endereco')->onDelete('cascade');
             $table->string('titulo', 100)->nullable(false);
-            $table->string('descricao', 200)->nullable();
+            $table->text('descricao')->nullable();
+            $table->text('forma_doar')->nullable();
             $table->string('finalidade', 200)->nullable();
             $table->string('status', 20)->default('ATIVO');//ATIVO, INATIVO
             $table->string('caminho_imagem', 200)->nullable();

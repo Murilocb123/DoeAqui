@@ -14,6 +14,7 @@ class Doacao extends Model
         'id_doacao_destino',
         'titulo',
         'descricao',
+        'forma_doar',
         'finalidade',
         'status',
         'caminho_imagem'
@@ -24,6 +25,7 @@ class Doacao extends Model
         'id_doacao_destino' => 'integer',
         'titulo' => 'string',
         'descricao' => 'string',
+        'forma_doar' => 'string',
         'finalidade' => 'string',
         'status' => 'string',
         'caminho_imagem' => 'string'

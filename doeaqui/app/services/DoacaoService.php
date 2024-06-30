@@ -26,7 +26,7 @@ class DoacaoService
             $path = $request->file('imagem')->storeAs('public/imagem', $fileNameToStore);
         }
 
-        $data['caminho_imagem'] = $path;
+        $data['caminho_imagem'] = $fileNameToStore;
 
         return $this->doacao->create($data)->id;
     }
@@ -51,17 +51,17 @@ class DoacaoService
         return $this->doacao->all()->toArray();
     }
 
-    public function findAllSelect(): array
+    public function findAllSelect($campo): array
     {
         $doacao = $this->doacao->all()->toArray();
         $doacaoListSelect = [];
         // ['value' => 'Ativo', 'label' => 'Ativo', 'selected' => true],
         $index = 0;
         foreach ($doacao as $p) {
-            $doacaoListSelect[$index] = ['value' => $p['id'], 'label' => $p['nome'], 'selected' => false];
+            $doacaoListSelect[$index] = ['id' => $p['id'], 'status' => $p['status'], 'value' => $p['titulo'], 'label' => $p[$campo], 'selected' => false];
             $index++;
         }
-        $doacaoListSelect[$index] = ['value' => '', 'label' => 'Selecione', 'selected' => true];
+
         return $doacaoListSelect;
     }
 }

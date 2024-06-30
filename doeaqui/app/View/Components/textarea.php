@@ -6,12 +6,12 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class select extends Component
+class textarea extends Component
 {
-
     public $label;
+
     public $name;
-    public $options;
+    public $placeholder = "";
 
     public $columnsxs = 12;
     public $columnsmd = 12;
@@ -24,31 +24,24 @@ class select extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($label, $name, $options, $value, $visualizacao = false)
+    public function __construct($label, $name, $placeholder, $columnsxs = 12, $columnsmd = 1, $value = '', $required = false, $visualizacao = false)
     {
         $this->label = $label;
         $this->name = $name;
-        $this->options = $options;
+        $this->placeholder = $placeholder;
+        $this->columnsxs = $columnsxs;
+        $this->columnsmd = $columnsmd;
         $this->value = $value;
+        $this->required = $required;
         $this->visualizacao = $visualizacao;
-        if($this->value != null){
-        foreach ($this->options as $key => $option) {
-            if ($option['value'] == $this->value) {
-                $this->options[$key]['selected'] = true;
-            } else {
-                $this->options[$key]['selected'] = false;
-            }
-        }
+
     }
-}
 
     /**
      * Get the view / contents that represent the component.
      */
     public function render(): View|Closure|string
     {
-        return view('components.select');
+        return view('components.textarea');
     }
 }
-
-

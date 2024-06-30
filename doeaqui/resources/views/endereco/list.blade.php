@@ -2,6 +2,8 @@
 @section('viewName','Pessoas')
 @section('content')
 <div>
-    <a href="/endereco/create" class="btn btn-primary">Adicionar</a>
+    <x-table titulo="Endereços" :columns="['uf'=>'Estado','cidade'=>'Cidade','rua'=>'Rua']" 
+    dados="{{$enderecos}}" rotaCriacao="/endereco/create" 
+    rotaVizualizacao="/endereco/preview" rotaEdicao="/endereco/edit" rotaExclusao="/endereco/delete"/>
 </div>
 @endSection()

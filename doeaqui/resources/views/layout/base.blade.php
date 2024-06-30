@@ -11,10 +11,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="{{asset('css/table.css')}}" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%; /* Faz o HTML e o BODY ocuparem toda a altura da tela */
+            margin: 0; /* Remove as margens padrão */
+        }
+        #main-content {
+            flex-grow: 1; /* Faz com que o conteúdo expanda para ocupar o espaço disponível */
+        }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <x-navbar/>
-    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout container flex-grow-1">
       @yield('content')
     </div>
 
@@ -27,6 +36,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+<footer class="bg-dark text-white mt-auto py-3 ">
+    <div class="container d-flex justify-content-between">
+        <div class="footer-logo">
+            <img src="{{asset('app-files/logo.953e34b3.png')}}" alt="Logo UNIDAVI" style="width: 50px;">
+        </div>
+        <div class="text-center flex-grow-1">
+            UNIDAVI - Centro Universitário para o Desenvolvimento do Alto Vale do Itajaí.
+            <br>
+            Desenvolvido por Emerson Okopnik, Iago Trentini Etur, Murilo Costa Bittencourt
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>
+

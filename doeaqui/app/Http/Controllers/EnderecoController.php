@@ -11,7 +11,6 @@ use Illuminate\Http\Request;
 class EnderecoController extends Controller
 {
     private DoacaoEnderecoService $doacaoEnderecoService;
-    //private ColetaEnderecoService $coletaEnderecoService;
 
     public function __construct(DoacaoEnderecoService $doacaoEnderecoService)
     {
@@ -34,7 +33,7 @@ class EnderecoController extends Controller
    public function editView(int $id)
    {
        $doacaoEndereco = $this->doacaoEnderecoService->findById($id);
-       return view('endereco.endereco')->with('visualizacao',true)->with('endereco', $doacaoEndereco);
+       return view('endereco.endereco')->with('visualizacao',false)->with('endereco', $doacaoEndereco);
    }
 
    public function previewView(int $id)
